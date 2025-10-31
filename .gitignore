@@ -1,0 +1,96 @@
+# =========================
+#  Formation IA - Gitignore
+# =========================
+
+# --- Environnements secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# --- Notebooks Jupyter ---
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# --- Logs et sorties temporaires ---
+*.log
+*.tmp
+*.bak
+*.swp
+*.DS_Store
+Thumbs.db
+
+# --- Dossiers temporaires ou spécifiques IDE ---
+.vscode/
+.idea/
+*.code-workspace
+
+# --- Fichiers de build ou cache ---
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+pip-wheel-metadata/
+.cache/
+.pytest_cache/
+
+# --- Environnements virtuels ---
+venv/
+.envrc
+.envrc.local
+.venv/
+env/
+ENV/
+.conda/
+*.conda
+*.virtualenv
+
+# --- Données ou exports ---
+data/
+datasets/
+outputs/
+exports/
+*.csv
+*.json
+*.xml
+*.parquet
+
+# --- Checkpoints de modèles IA ---
+*.pt
+*.pth
+*.h5
+*.ckpt
+*.pb
+models/
+checkpoints/
+runs/
+
+# --- Autres fichiers inutiles ---
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# --- OS spécifiques ---
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# --- Jupyter runtime ---
+.jupyter/
+.profile
+.ipython/

@@ -51,8 +51,32 @@ formation-ia/
 ```bash
 git clone https://github.com/<ton-pseudo>/formation-ia.git
 cd formation-ia
-
+```
 ### 2️⃣ Créer un environnement virtuel
-
+```
 python -m venv .venv
 source .venv/bin/activate  # sous Windows : .venv\Scripts\activate
+```
+
+### 3️⃣ Installer les dépendances
+```
+pip install -r utils/requirements.txt
+```
+
+### 4️⃣ Configurer ta clé OpenAI (mode API)
+
+Copie le fichier .env :
+```
+cp utils/config_example.env .env
+```
+💡 Utilisation dans un notebook Jupyter
+
+Dans n’importe quel notebook de ta formation, tu pourras écrire :
+```
+from load_env import load_environment
+env = load_environment()
+
+import openai
+openai.api_key = env["OPENAI_API_KEY"]
+```
+
